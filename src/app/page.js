@@ -40,7 +40,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen w-full flex-col">
+    <main className="flex min-h-screen w-full flex-col max-w-screen-lg m-auto">
       <div className="m-3 self-start cursor-pointer">
         <CrossIcon className="h-8 w-8" />
       </div>
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
         <div className="sm:flex-1">
           <div className="divide-y">
-            <div className="space-y-3 py-6">
+            <div className="space-y-3 py-6 md:pt-0">
               <h3>Praise</h3>
               <p className="sub-txt">What features describe us?</p>
               <PraiseFeatures onSelect={handlePraiseFeatures} />
